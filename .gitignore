@@ -1,0 +1,11 @@
+# Videos personales: nunca al repositorio
+*.mp4
+*.mov
+*.MOV
+*.MP4
+*.avi
+*.mkv
+
+# Sistema
+.DS_Store
+Thumbs.db
