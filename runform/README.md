@@ -343,6 +343,20 @@ La interfaz no tiene tests automáticos. Se valida a mano con videos reales.
 - Los iconos son trazos SVG en `ui/icons.tsx`. Para añadir uno, añade su `path` al mapa.
 - Textos de la interfaz en español.
 
+### Despliegue
+
+La app se publica sola en GitHub Pages con cada push a `main`, mediante el workflow
+`.github/workflows/deploy.yml`. El workflow instala dependencias, descarga el WASM y el modelo
+de MediaPipe, pasa lint y tests, compila con la base `/optirun/` y publica `runform/dist`.
+
+Para que funcione hay que activar Pages una vez en el repositorio: **Settings → Pages → Source:
+GitHub Actions**. En repositorios privados, Pages requiere plan de pago.
+
+URL resultante: `https://drent1983.github.io/optirun/`
+
+El modelo de pose pesa 30 MB y se descarga la primera vez que se procesa un video. Queda en
+caché del navegador para las siguientes visitas.
+
 ## 11. Cómo extender
 
 **Añadir una métrica**

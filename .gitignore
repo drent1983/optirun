@@ -9,3 +9,7 @@
 # Sistema
 .DS_Store
 Thumbs.db
+
+# Capturas de pantalla en la raíz
+/*.png
+/Captura*.png
